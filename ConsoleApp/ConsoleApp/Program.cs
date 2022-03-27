@@ -11,7 +11,7 @@ namespace ConsoleApp
         }
         public static void Menu()
         {
-            string commands = "-----------------------------\n1: Create a library\n2: See all libraries\n3: Add book\n4: See books of library\n-----------------------------";
+            string commands = "-----------------------------\n1: Create a library\n2: See all libraries\n3: Add book\n4: See books of library\n5: Exit\n-----------------------------";
             Console.WriteLine(@"
 ██     ██ ███████ ██       ██████  ██████  ███    ███ ███████ 
 ██     ██ ██      ██      ██      ██    ██ ████  ████ ██      
@@ -42,6 +42,8 @@ namespace ConsoleApp
                 case "4":
                     Library.SeeBooksOfLibrary();
                     goto Menu;
+                case "5":
+                    break;
                 default:
                     Console.Clear();
                     Console.WriteLine("Invalid input try again!");
