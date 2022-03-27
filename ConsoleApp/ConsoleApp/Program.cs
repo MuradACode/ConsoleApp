@@ -12,7 +12,15 @@ namespace ConsoleApp
         public static void Menu()
         {
             string commands = "-----------------------------\n1: Create a library\n2: See all libraries\n3: Add book\n4: See books of library\n-----------------------------";
-            Console.WriteLine("WELCOME");
+            Console.WriteLine(@"
+██     ██ ███████ ██       ██████  ██████  ███    ███ ███████ 
+██     ██ ██      ██      ██      ██    ██ ████  ████ ██      
+██  █  ██ █████   ██      ██      ██    ██ ██ ████ ██ █████   
+██ ███ ██ ██      ██      ██      ██    ██ ██  ██  ██ ██      
+ ███ ███  ███████ ███████  ██████  ██████  ██      ██ ███████ 
+                                                              
+                                                              
+");
         Menu:
             Console.WriteLine("\n----------------------------------------\nChoose the command\nType 0 to get information about commands\n----------------------------------------");
             string input = Console.ReadLine();
