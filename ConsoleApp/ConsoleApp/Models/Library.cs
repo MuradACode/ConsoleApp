@@ -111,13 +111,15 @@ namespace ConsoleApp.Models
             }
             Console.Write("Choose the library: ");
             string input = Console.ReadLine();
+            int i = 0;
             foreach (var library in libraries)
             {
                 if ((input == library._name))
                 {
                     foreach (Book book in library)
                     {
-                        Console.WriteLine(book);
+                        Console.WriteLine(book.GetBookInfo(i));
+                        i++;
                     }
                 }
             }

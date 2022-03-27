@@ -83,5 +83,9 @@ namespace ConsoleApp.Models
             Book book = new Book(bookName, publishYear, person);
             Console.WriteLine("----------------------------------------\nBook created successfully\n----------------------------------------");
         }
+        public string GetBookInfo(int index)
+        {
+            return "Book's name: " + books[index]._name + "\nPublish year: " + books[index]._publishYear + "\nAuthor:\n" + Person.GetPersonInfo(author); 
+        }
     }
 }

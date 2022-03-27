@@ -64,5 +64,9 @@ namespace ConsoleApp.Models
             Person person = new Person(name, surname, age);
             Console.WriteLine("----------------------------------------\nPerson created successfully\n----------------------------------------");
         }
+        public static string GetPersonInfo(Person person)
+        {
+            return "Name: " + person._name + "\nSurname: " + person._surname + "\nAge:" + person._age;
+        }
     }
 }
